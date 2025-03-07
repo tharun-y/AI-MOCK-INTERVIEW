@@ -1,0 +1,267 @@
+/* Container styles */
+.hroruser-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #0d0d0d;
+  min-height: 100vh;
+  color: #e0e0e0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Logo styles */
+.hroruser-logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.hroruser-logo-text {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.hroruser-logo-accent {
+  width: 30px;
+  height: 30px;
+  background-color: #00b868;
+  margin-left: 4px;
+  border-radius: 4px;
+}
+
+/* Header styles */
+.hroruser-mock-interview-header {
+  background-color: #161616;
+  color: white;
+  padding: 2.5rem;
+  border-radius: 8px;
+  margin-bottom: 2.5rem;
+  border-left: 4px solid #00b868;
+}
+
+.hroruser-title {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.hroruser-subtitle {
+  color: #a0a0a0;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+/* Option cards */
+.hroruser-options {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.hroruser-option-card {
+  display: flex;
+  align-items: center;
+  padding: 1.75rem;
+  background-color: #161616;
+  border-radius: 8px;
+  border: 1px solid #2a2a2a;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.hroruser-option-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  border-color: #00b868;
+}
+
+.hroruser-option-card.hroruser-active {
+  border: 1px solid #00b868;
+  background-color: #1a1a1a;
+}
+
+.hroruser-option-card.hroruser-active::before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  bottom: -1px;
+  width: 4px;
+  background-color: #00b868;
+  border-radius: 8px 0 0 8px;
+}
+
+.hroruser-option-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1.5rem;
+  width: 48px;
+  height: 48px;
+  font-size: 1.5rem;
+  background-color: #1e2d28;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.hroruser-option-content {
+  flex: 1;
+}
+
+.hroruser-option-title {
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+
+.hroruser-option-description {
+  color: #a0a0a0;
+  font-size: 0.95rem;
+}
+
+.hroruser-option-badge {
+  background-color: #00b868;
+  color: #000000;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  margin-left: 1rem;
+}
+
+/* Button styles */
+.hroruser-button {
+  display: inline-block;
+  background-color: #00b868;
+  color: #000000;
+  padding: 0.875rem 2rem;
+  border-radius: 6px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.2s;
+  margin-top: 1rem;
+  letter-spacing: 0.5px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.hroruser-button:hover {
+  background-color: #00cc73;
+  transform: translateY(-1px);
+}
+
+.hroruser-button:active {
+  transform: translateY(0);
+}
+
+/* Feature cards styles based on the second image */
+.feature-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.feature-card {
+  background-color: #161616;
+  border-radius: 8px;
+  padding: 1.5rem;
+  border: 1px solid #2a2a2a;
+  transition: all 0.2s ease;
+}
+
+.feature-card:hover {
+  border-color: #00b868;
+  transform: translateY(-2px);
+}
+
+.feature-card.active {
+  border: 1px solid #3b3bc7;
+  box-shadow: 0 0 0 1px #3b3bc7;
+}
+
+.feature-icon {
+  background-color: #1e1e1e;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.feature-title {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.feature-description {
+  color: #a0a0a0;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.feature-link {
+  color: #00b868;
+  font-size: 0.9rem;
+  text-decoration: none;
+  display: block;
+  margin-top: 1rem;
+}
+
+/* Section styles */
+.section-title {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  color: #a0a0a0;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hroruser-title {
+    font-size: 1.75rem;
+  }
+  
+  .hroruser-option-card {
+    padding: 1.25rem;
+  }
+  
+  .hroruser-option-icon {
+    margin-right: 1rem;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .hroruser-mock-interview-header {
+    padding: 1.5rem;
+  }
+  
+  .feature-cards-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 769px) {
+  .hroruser-button {
+    width: auto;
+  }
+}

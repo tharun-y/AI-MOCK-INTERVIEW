@@ -1,0 +1,210 @@
+/* Clean black and green theme with modern styling */
+body.joininterview-body {
+  background: linear-gradient(135deg, #000, #333);
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #e0e0e0;
+  transition: background-color 0.3s ease;
+}
+
+/* Container */
+.joininterview-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Title */
+.joininterview-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Grid layout */
+.joininterview-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Card styling */
+.joininterview-card {
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  padding: 1.8rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  border: 1px solid #222;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.joininterview-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+}
+
+.joininterview-card-active {
+  border: 1px solid #00cc66;
+}
+
+/* Card titles */
+.joininterview-card-title {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+/* Card description */
+.joininterview-card-description {
+  color: #aaa;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Form elements */
+.joininterview-unlock-form input,
+.joininterview-unlock-form textarea,
+input,
+textarea {
+  width: 100%;
+  padding: 0.9rem;
+  margin: 0.6rem 0;
+  background-color: #262626;
+  border: 1px solid #444;
+  border-radius: 6px;
+  color: #e0e0e0;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #00cc66;
+  box-shadow: 0 0 5px rgba(0, 204, 102, 0.5);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Button styling */
+.joininterview-btn,
+.joininterview-submit-button,
+button {
+  background-color: #00cc66;
+  color: #000;
+  padding: 0.8rem 1.4rem;
+  border-radius: 6px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.joininterview-btn:hover,
+.joininterview-submit-button:hover,
+button:hover {
+  background-color: #00b359;
+  transform: translateY(-2px);
+}
+
+.joininterview-btn:disabled,
+.joininterview-submit-button:disabled,
+button:disabled {
+  background-color: #007f44;
+  cursor: not-allowed;
+}
+
+/* Links */
+.joininterview-link {
+  color: #00cc66;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.joininterview-link:hover {
+  text-decoration: underline;
+  color: #00b359;
+}
+
+/* Question list */
+.joininterview-question-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.joininterview-question-item {
+  background-color: #262626;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  border: 1px solid #333;
+}
+
+.joininterview-question-text {
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+/* Status messages */
+.joininterview-error-message,
+.joininterview-error {
+  color: #ff5252;
+  background-color: rgba(255, 82, 82, 0.1);
+  padding: 0.8rem;
+  border-radius: 6px;
+  margin-top: 1rem;
+}
+
+.joininterview-success-message,
+.joininterview-success {
+  color: #00cc66;
+  background-color: rgba(0, 204, 102, 0.1);
+  padding: 0.8rem;
+  border-radius: 6px;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/* Loading indicator */
+.joininterview-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.joininterview-spinner {
+  border: 4px solid #333;
+  border-top: 4px solid #00cc66;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: joininterview-spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes joininterview-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .joininterview-container {
+    padding: 1rem;
+  }
+  
+  .joininterview-card-grid {
+    grid-template-columns: 1fr;
+  }
+}
