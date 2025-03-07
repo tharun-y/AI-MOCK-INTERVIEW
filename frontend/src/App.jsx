@@ -2,9 +2,7 @@ import React, { useState } from 'react';
 import './App.css';  // Import the external stylesheet
 import Footer from './Footer.jsx';  // Import the Footer component
 import Header from './Header.jsx';  // Import the new Header component
-// Using import at the top of your file
-import interviewImage from '../src/images/interviewcontainer.jpg';
-import seam from '../src/images/seamless.png';
+// Removed image imports and using direct addresses instead
 import { Link } from 'react-router-dom';
 
 const App = () => {
@@ -20,16 +18,17 @@ const App = () => {
         <h1 className="hero-title">Your Personalized AI Interview Coach</h1>
         <p className="hero-subtitle">Double your chances of landing a job with IntelliHire</p>
         <div className="hero-buttons">
-          
-          <Link to="/user/dash" className="button primary-button"       style={{ textDecoration: 'none' }}
- >Get Started</Link>
-          <Link to="/user/howItWorks" className="button secondary-button"       style={{ textDecoration: 'none' }}
-          >Learn More</Link>
+          <Link to="/user/dash" className="button primary-button" style={{ textDecoration: 'none' }}>
+            Get Started
+          </Link>
+          <Link to="/user/howItWorks" className="button secondary-button" style={{ textDecoration: 'none' }}>
+            Learn More
+          </Link>
         </div>
 
         {/* Interview Image Section */}
         <div className="interview-image-container">
-          <img src={interviewImage} alt="AI Interview Simulation" />
+          <img src="../src/images/interviewcontainer.jpg" alt="AI Interview Simulation" />
         </div>
       </section>
 
@@ -66,14 +65,10 @@ const App = () => {
                 <h3>Coding Platforms</h3>
                 <p>Practice coding and algorithmic problem-solving</p>
                 <ul className="resource-links">
-                  <li><a href="https://www.geeksforgeeks.org/" target="_blank" rel="noopener noreferrer"       style={{ textDecoration: 'none' }}
-                  >GeeksforGeeks</a></li>
-                  <li><a href="https://leetcode.com/" target="_blank" rel="noopener noreferrer"       style={{ textDecoration: 'none' }}
-                  >LeetCode</a></li>
-                  <li><a href="https://www.hackerrank.com/" target="_blank" rel="noopener noreferrer"       style={{ textDecoration: 'none' }}
-                  >HackerRank</a></li>
-                  <li><a href="https://www.codechef.com/" target="_blank" rel="noopener noreferrer"       style={{ textDecoration: 'none' }}
-                  >CodeChef</a></li>
+                  <li><a href="https://www.geeksforgeeks.org/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>GeeksforGeeks</a></li>
+                  <li><a href="https://leetcode.com/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>LeetCode</a></li>
+                  <li><a href="https://www.hackerrank.com/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>HackerRank</a></li>
+                  <li><a href="https://www.codechef.com/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>CodeChef</a></li>
                 </ul>
               </div>
               
@@ -159,7 +154,7 @@ const App = () => {
 
       {/* More Features Section */}
       <section>
-        <h2 className="section-title" style={{ textAlign: 'center', margin: '3rem 0 1rem', fontSize: '3rem' , marginLeft:'285px' }}>
+        <h2 className="section-title" style={{ textAlign: 'center', margin: '3rem 0 1rem', fontSize: '3rem', marginLeft: '285px' }}>
           Complete suite of features
         </h2>
         <div className="features">
@@ -167,24 +162,27 @@ const App = () => {
             <div className="feature-content">
               <h3>Interview Simulation</h3>
               <p>🎙 AI-driven structured interviews.</p>
-              <Link to="/user/howItWorks" className="button feature-button"       style={{ textDecoration: 'none' }}
-              >Learn more</Link>
+              <Link to="/user/howItWorks" className="button feature-button" style={{ textDecoration: 'none' }}>
+                Learn more
+              </Link>
             </div>
           </div>
           <div className="feature-card">
             <div className="feature-content">
               <h3>Dynamic Questioning</h3>
               <p>🔄 Adapts based on user responses.</p>
-              <Link to="/user/howItWorks" className="button feature-button"       style={{ textDecoration: 'none' }}
-              >Learn more</Link>
+              <Link to="/user/howItWorks" className="button feature-button" style={{ textDecoration: 'none' }}>
+                Learn more
+              </Link>
             </div>
           </div>
           <div className="feature-card">
             <div className="feature-content">
               <h3>Personality Analysis</h3>
               <p>🧠 Technical Skills Assessment</p>
-              <Link to="/user/howItWorks" className="button feature-button"       style={{ textDecoration: 'none' }}
-              >Learn more</Link>
+              <Link to="/user/howItWorks" className="button feature-button" style={{ textDecoration: 'none' }}>
+                Learn more
+              </Link>
             </div>
           </div>
         </div>
@@ -193,24 +191,27 @@ const App = () => {
             <div className="feature-content">
               <h3>Technical Skills Assessment</h3>
               <p>📊 Offers coding challenges with evaluations.</p>
-              <Link to="/user/howItWorks" className="button feature-button"       style={{ textDecoration: 'none' }}
-              >Learn more</Link>
+              <Link to="/user/howItWorks" className="button feature-button" style={{ textDecoration: 'none' }}>
+                Learn more
+              </Link>
             </div>
           </div>
           <div className="feature-card">
             <div className="feature-content">
               <h3>Gamification</h3>
               <p>🎮 Provides engaging interview experiences.</p>
-              <Link to="/user/howItWorks" className="button feature-button"       style={{ textDecoration: 'none' }}
-              >Learn more</Link>
+              <Link to="/user/howItWorks" className="button feature-button" style={{ textDecoration: 'none' }}>
+                Learn more
+              </Link>
             </div>
           </div>
           <div className="feature-card">
             <div className="feature-content">
               <h3>HR Integration</h3>
               <p>📋 Seamlessly connects with hiring tools.</p>
-              <Link to="/user/howItWorks" className="button feature-button"       style={{ textDecoration: 'none' }}
-              >Learn more</Link>
+              <Link to="/user/howItWorks" className="button feature-button" style={{ textDecoration: 'none' }}>
+                Learn more
+              </Link>
             </div>
           </div>
         </div>
@@ -220,19 +221,18 @@ const App = () => {
       <section className="integrations">
         <p className="accent-text">Integrations</p>
         <h2 className="section-heading">Seamless connections</h2>
-        <h6 className="accent-text">Integrate effortlessly with your <br></br><br></br>favourite tools and Platforms</h6>
-        <div className='seam'>
-        <img src={seam} alt="Seamless Interactions with AI" />
+        <h6 className="accent-text">
+          Integrate effortlessly with your <br /><br />favourite tools and Platforms
+        </h6>
+        <div className="seam">
+          <img src="../src/images/seamless.png" alt="Seamless Interactions with AI" />
         </div>
-        
-    
       </section>
 
       {/* Testimonials */}
       <section className="testimonials">
         <p className="accent-text">Testimonials</p>
         <h2 className="section-heading">They love IntelliHire</h2>
-        
         <div className="testimonial-grid">
           <div className="testimonial-card">
             <p className="testimonial-text">
@@ -243,7 +243,6 @@ const App = () => {
               <span>Isabella Smith</span>
             </div>
           </div>
-          
           <div className="testimonial-card">
             <p className="testimonial-text">
               IntelliHire changed how we evaluate candidates. Intuitive, flexible, and provides meaningful insights. Big win for our recruitment team!
@@ -253,7 +252,6 @@ const App = () => {
               <span>James Wilson</span>
             </div>
           </div>
-          
           <div className="testimonial-card">
             <p className="testimonial-text">
               Practicing with IntelliHire = a dream. Quick, responsive feedback, no awkward moments. My confidence soared in real interviews.
@@ -268,10 +266,13 @@ const App = () => {
       
       {/* CTA Section */}
       <section className="cta">
-        <h2>Ready to ace your<br/>next interview?</h2>
+        <h2>Ready to ace your<br />next interview?</h2>
         <p>Get IntelliHire and start practicing today!</p>
-        <Link to="/user/dash"><a href="#" className="button cta-button"       style={{ textDecoration: 'none' }}
-        >Get started</a></Link>
+        <Link to="/user/dash">
+          <a href="#" className="button cta-button" style={{ textDecoration: 'none' }}>
+            Get started
+          </a>
+        </Link>
       </section>
       <Footer />
     </div>
