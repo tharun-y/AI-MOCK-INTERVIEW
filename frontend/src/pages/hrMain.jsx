@@ -1,6 +1,5 @@
 import React from "react";
 import "./hrMain.css";
-import dashboardmockup from "../Images/techstack.jpg";
 import HeaderHr from "./HeaderHr";
 import Footer from "../Footer";
 import { Link } from "react-router-dom";
@@ -110,7 +109,7 @@ const HrMain = () => {
         </div>
 
         <div className="hrmain-hero-image">
-          <img src={dashboardmockup} alt="Dashboard mockup" />
+          <img src="/Images/techstack.jpg" alt="Dashboard mockup" />
         </div>
       </section>
       <Footer />
