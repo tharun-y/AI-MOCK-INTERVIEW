@@ -28,7 +28,8 @@ const App = () => {
 
         {/* Interview Image Section */}
         <div className="interview-image-container">
-          <img src="../src/images/interviewcontainer.jpg" alt="AI Interview Simulation" />
+          {/* Changed path to /images/ per Option 1 */}
+          <img src="/images/interviewcontainer.jpg" alt="AI Interview Simulation" />
         </div>
       </section>
 
@@ -225,7 +226,8 @@ const App = () => {
           Integrate effortlessly with your <br /><br />favourite tools and Platforms
         </h6>
         <div className="seam">
-          <img src="../src/images/seamless.png" alt="Seamless Interactions with AI" />
+          {/* Changed path to /images/ per Option 1 */}
+          <img src="/images/seamless.png" alt="Seamless Interactions with AI" />
         </div>
       </section>
 
